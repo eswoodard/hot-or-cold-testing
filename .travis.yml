@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: Yb2zEQwys907408zQMpk3OULKswrREI/UKjzBYc4fTpSEebQKM2l5uzSr70qdYlqu4TpDv0WEn87BkCgNpnM9GQwk46kF7+8gYcZtHW+3DCQ4D5pfsJrR9xAPyaPGhDfZZJZdSoV+2VpS7+5rhP6oV7KLzDPp0zsB544KyUiNcjMQlTJPK2rz3eCXmVoSrlyHSvBxmYOuLDOFqyqdcGzkE4qn46bRN50pTdqIWCgOgsEBnFaj2M+yaEjJ5RNo9gqex32r4Ushk10saIUUJpq3e5CNVPNJM6/bcYu0bVveNbaCyAuq5FGRqA5wLKOr3t+wBzc57CjMLQTjBGuLzP2wfrNB4VRiKYfomDLf/11Mn08Kbg9Ld3HgvaU1gTEB0rtYF3xQxWMqJVL/0go/PELwXGkDlbupRAhAfYquo/yGuOSkzjr7FaXfB+KeRgxUeYgR3YmykIFLO6G4ed3tZtiUij50RznsKphUNmq5GYxw/JzGqoGkr+97ZNd+euqvOzqiV/QVyJHbxl3/V+LnEvqq9wMWmWL2qFaZ0gwyFLN4UWvP5Z2pzD/gJz+JQA4VocSx+ZNsLt11CVepULVsn4VXEMaqyWmmjfMrbxrFU1CSLurQvVtZGpIUvvmHhGiuNfN/mSDUEapPwpQSmcBVGnV2whwyU4i/IkLL7z8fHEbr+Q=
+  app: agile-ridge-45448
+  on:
+    repo: eswoodard/hot-or-cold-testing
