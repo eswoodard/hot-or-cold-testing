@@ -1,13 +1,23 @@
 import React from 'react';
+<<<<<<< HEAD
 import { shallow, mount } from 'enzyme';
 
 import GuessForm from './guess-form';
 
 describe('<GuessForm />', () => {
+=======
+import {shallow, mount} from 'enzyme';
+
+
+import GuessForm from './guess-form';
+
+describe ('<GuessForm />', () => {
+>>>>>>> 0bb931b78eb584b5b0b0f69ff1c458ac4256c90d
   it('Renders without crashing', () => {
     shallow(<GuessForm />);
   });
 
+<<<<<<< HEAD
   it('Should fire the onMakeGuess callback when the form is submitted', () => {
     const callback = jest.fn();
     const wrapper = mount(<GuessForm onMakeGuess={callback} />);
@@ -25,3 +35,10 @@ describe('<GuessForm />', () => {
     expect(input.instance().value).toEqual('');
   });
 });
+=======
+it('Renders guess form', () => {
+
+})
+
+});
+>>>>>>> 0bb931b78eb584b5b0b0f69ff1c458ac4256c90d

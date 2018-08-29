@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import { shallow } from 'enzyme';
 
 import GuessList from './guess-list';
@@ -18,3 +19,15 @@ describe('<GuessList />', () => {
     });
   });
 });
+=======
+import {shallow, mount} from 'enzyme';
+
+
+import GuessList from './guess-list';
+
+describe ('<GuessList />', () => {
+  it('Renders without crashing', () => {
+    shallow(<GuessList guesses={[]} />);
+  });
+});
+>>>>>>> 0bb931b78eb584b5b0b0f69ff1c458ac4256c90d
